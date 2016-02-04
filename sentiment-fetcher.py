@@ -64,9 +64,9 @@ def getTipsSentiment():
 					p = tip.replace("\r", "").replace("\n", "").replace("\"", "").split("\t");
 					buffer = StringIO()
 					c = pycurl.Curl()
-					c.setopt(c.URL, 'https://twinword-sentiment-analysis.p.mashape.com/analyze/')
+					c.setopt(c.URL, 'https://.../analyze/')
 					c.setopt(pycurl.HTTPHEADER, 
-						['X-Mashape-Key: tGymXYpdjpmshzZvFLohbZGIyZG3p1pOPyIjsno1fsyePwOF3D',
+						['X-Mashape-Key: ',
 	         		    'Content-Type: application/x-www-form-urlencoded',
 	  					'Accept: application/json'])
 					
